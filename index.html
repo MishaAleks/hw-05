@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mansoury</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght=400;500;700&family=Montserrat:wght=600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+
+<div class="top-bar">
+  <div class="top-bar__social">
+    <span>Follow us:</span>
+    <a href="#" aria-label="Facebook">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/>
+      </svg>
+    </a>
+    <a href="#" aria-label="Instagram">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+        <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" fill="white"/>
+        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" style="stroke:var(--blue);stroke-width:2;"/>
+      </svg>
+    </a>
+    <a href="#" aria-label="TikTok">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.78 1.52V6.76a4.85 4.85 0 01-1.01-.07z"/>
+      </svg>
+    </a>
+  </div>
+  <p class="top-bar__promo">Winter is coming! 50% off for new year</p>
+  <div class="top-bar__contact">
+    <a href="tel:+982531189">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14z"/></svg>
+      (+98) 253-1189
+    </a>
+    <a href="mailto:pigmentagency@gmail.com">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+      pigmentagency@gmail.com
+    </a>
+  </div>
+</div>
+
+<header class="header">
+  <a href="./index.html" class="logo">Mansoury<span>.</span></a>
+
+  <nav class="nav">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#hot-offers">Products</a></li>
+      <li><a href="#">Pages</a></li>
+      <li><a href="#features">About us</a></li>
+      <li><a href="#footer">Contact us</a></li>
+    </ul>
+  </nav>
+
+  <div class="header-actions">
+    <a href="#" class="btn-register">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+      Register / Login
+    </a>
+    <button class="icon-btn" type="button" aria-label="Cart">
+      <svg viewBox="0 0 24 24"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6"/></svg>
+    </button>
+    <button class="icon-btn" type="button" aria-label="Search">
+      <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+    </button>
+    
+    <button class="menu-toggle js-open-menu" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+      <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <line x1="3" y1="12" x2="21" y2="12"></line>
+        <line x1="3" y1="6" x2="21" y2="6"></line>
+        <line x1="3" y1="18" x2="21" y2="18"></line>
+      </svg>
+    </button>
+  </div>
+</header>
+
+<div class="menu-container js-menu-container" id="mobile-menu">
+  <button class="menu-toggle menu-close-btn js-close-menu" type="button" aria-label="Close menu">
+    <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+      <line x1="18" y1="6" x2="6" y2="18"></line>
+      <line x1="6" y1="6" x2="18" y2="18"></line>
+    </svg>
+  </button>
+  <nav class="mobile-nav">
+    <ul class="mobile-menu__list">
+      <li><a href="#" class="mobile-menu__link">Home</a></li>
+      <li><a href="#hot-offers" class="mobile-menu__link">Products</a></li>
+      <li><a href="#" class="mobile-menu__link">Pages</a></li>
+      <li><a href="#features" class="mobile-menu__link">About us</a></li>
+      <li><a href="#footer" class="mobile-menu__link">Contact us</a></li>
+    </ul>
+  </nav>
+  <div class="mobile-menu__auth">
+    <a href="#" class="btn-register" style="display: inline-flex; padding: 10px 20px;">Register / Login</a>
+  </div>
+</div>
+
+<section>
+  <div class="hero">
+    <div class="hero__content">
+      <h1 class="hero__title">Enhance Your Home with<br>Convenience and Style</h1>
+      <p class="hero__subtitle">Discover the best home appliances at unbeatable prices</p>
+      <button class="hero__cta">Shop Now &rarr;</button>
+    </div>
+    <div class="hero__dots">
+      <span class="hero__dot hero__dot--active"></span>
+      <span class="hero__dot"></span>
+      <span class="hero__dot"></span>
+    </div>
+  </div>
+</section>
+
+<section class="hot-offers" id="hot-offers">
+  <div class="hot-offers__wrapper">
+    <div class="hot-offers__text">
+      <h2 class="hot-offers__label">Discover Hot Deals<br>for Your Home!</h2>
+      <div class="hot-offers__underline"></div>
+      <p class="hot-offers__desc">
+        In Mansoury, daily you can find the highest discounts across all categories and products available on the website.
+      </p>
+      <div class="hot-offers__actions">
+        <button class="btn-show" type="button">Show All Products &rsaquo;</button>
+        <div class="arrows">
+          <button class="arrow-btn" type="button">
+            <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg>
+          </button>
+          <button class="arrow-btn" type="button">
+            <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="products-grid">
+      <div class="product-card">
+        <span class="product-card__badge">50%</span>
+        <div class="product-card__wish"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg></div>
+        <div class="product-card__img-wrap"><img class="product-card__img" src="./images/product1.png" alt="Toaster oven" /></div>
+        <p class="product-card__name">Bosch 300 Series SHEM63W55N</p>
+        <div class="product-card__price">
+          <span><span class="product-card__current">998$</span> <span class="product-card__old">1,200$</span></span>
+          <button class="product-card__cart" type="button"><svg viewBox="0 0 24 24"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6"/></svg></button>
+        </div>
+      </div>
+      <div class="product-card">
+        <span class="product-card__badge">40%</span>
+        <div class="product-card__wish"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg></div>
+        <div class="product-card__img-wrap"><img class="product-card__img" src="./images/product2.png" alt="Dishwasher" /></div>
+        <p class="product-card__name">Bosch 300 Series SHEM63W55N</p>
+        <div class="product-card__price">
+          <span><span class="product-card__current">998$</span> <span class="product-card__old">1,500$</span></span>
+          <button class="product-card__cart" type="button"><svg viewBox="0 0 24 24"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6"/></svg></button>
+        </div>
+      </div>
+      <div class="product-card">
+        <span class="product-card__badge">30%</span>
+        <div class="product-card__wish"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg></div>
+        <div class="product-card__img-wrap"><img class="product-card__img" src="./images/product3.png" alt="Cooking pot" /></div>
+        <p class="product-card__name">Bosch 300 Series SHEM63W55N</p>
+        <div class="product-card__price">
+          <span><span class="product-card__current">998$</span> <span class="product-card__old">1,200$</span></span>
+          <button class="product-card__cart" type="button"><svg viewBox="0 0 24 24"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6"/></svg></button>
+        </div>
+      </div>
+      <div class="product-card">
+        <span class="product-card__badge">58%</span>
+        <div class="product-card__wish"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg></div>
+        <div class="product-card__img-wrap"><img class="product-card__img" src="./images/product4.png" alt="Refrigerator" /></div>
+        <p class="product-card__name">Bosch 300 Series SHEM63W55N</p>
+        <div class="product-card__price">
+          <span><span class="product-card__current">998$</span> <span class="product-card__old">1,999$</span></span>
+          <button class="product-card__cart" type="button"><svg viewBox="0 0 24 24"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6"/></svg></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="banners" id="banners">
+  <div class="banners__grid">
+    <div class="banner" style="background:linear-gradient(135deg,#4fc3f7,#0288d1);">
+      <img class="banner__img" src="./images/frame1.png" alt="Toaster oven" />
+      <div class="banner__content">
+        <p class="banner__discount">30% OFF</p>
+        <h3 class="banner__title">Quick and Hot</h3>
+      </div>
+    </div>
+    <div class="banner" style="background:linear-gradient(135deg,#1565c0,#0d47a1);">
+      <img class="banner__img" src="./images/frame2.png" alt="Cookware" />
+      <div class="banner__content">
+        <p class="banner__discount">30% OFF</p>
+        <h3 class="banner__title">Kitchenware from Top Brands</h3>
+      </div>
+    </div>
+    <div class="banner" style="background:linear-gradient(135deg,#64b5f6,#1976d2);">
+      <img class="banner__img" src="./images/frame3.png" alt="Luggage" />
+      <div class="banner__content">
+        <p class="banner__discount">25% OFF</p>
+        <h3 class="banner__title">Travel with Quality</h3>
+      </div>
+    </div>
+    <div class="banner banner--wide" style="background:linear-gradient(135deg,#90caf9,#42a5f5);">
+      <img class="banner__img" src="./images/frame4.png" alt="Refrigerator" />
+      <div class="banner__content">
+        <p class="banner__discount">30% OFF</p>
+        <h3 class="banner__title">Cool and High-Quality<br>Refrigerators and Freezers</h3>
+      </div>
+    </div>
+    <div class="banner" style="background:linear-gradient(135deg,#b3e5fc,#29b6f6);">
+      <img class="banner__img" src="./images/frame5.png" alt="Washing machine" />
+      <div class="banner__content">
+        <p class="banner__discount">30% OFF</p>
+        <h3 class="banner__title">Clean and Gleaming Clothes</h3>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="may-like" id="products">
+  <h2 class="section-title">Products You May Like</h2>
+  <div class="section-title__bar"></div>
+  <div class="may-like__grid">
+    <div class="product-card">
+      <span class="product-card__badge">50%</span>
+      <div class="product-card__wish"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg></div>
+      <div class="product-card__img-wrap"><img class="product-card__img" src="./images/product5.png" alt="Washing machine" /></div>
+      <p class="product-card__name">Bosch 300 Series SHEM63W55N</p>
+      <div class="product-card__price">
+        <span><span class="product-card__current">998$</span> <span class="product-card__old">1,200$</span></span>
+        <button class="product-card__cart" type="button"><svg viewBox="0 0 24 24"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6"/></svg></button>
+      </div>
+    </div>
+    <div class="product-card">
+      <span class="product-card__badge">40%</span>
+      <div class="product-card__wish"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg></div>
+      <div class="product-card__img-wrap"><img class="product-card__img" src="./images/product2.png" alt="Dishwasher" /></div>
+      <p class="product-card__name">Bosch 300 Series SHEM63W55N</p>
+      <div class="product-card__price">
+        <span><span class="product-card__current">998$</span> <span class="product-card__old">1,500$</span></span>
+        <button class="product-card__cart" type="button"><svg viewBox="0 0 24 24"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6"/></svg></button>
+      </div>
+    </div>
+    <div class="product-card">
+      <span class="product-card__badge">60%</span>
+      <div class="product-card__wish"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg></div>
+      <div class="product-card__img-wrap"><img class="product-card__img" src="./images/product3.png" alt="Cooking pot" /></div>
+      <p class="product-card__name">Bosch 300 Series SHEM63W55N</p>
+      <div class="product-card__price">
+        <span><span class="product-card__current">998$</span> <span class="product-card__old">1,200$</span></span>
+        <button class="product-card__cart" type="button"><svg viewBox="0 0 24 24"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6"/></svg></button>
+      </div>
+    </div>
+    <div class="product-card">
+      <span class="product-card__badge">35%</span>
+      <div class="product-card__wish"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg></div>
+      <div class="product-card__img-wrap"><img class="product-card__img" src="./images/product4.png" alt="Retro refrigerator" /></div>
+      <p class="product-card__name">Bosch 300 Series SHEM63W55N</p>
+      <div class="product-card__price">
+        <span><span class="product-card__current">998$</span> <span class="product-card__old">1,200$</span></span>
+        <button class="product-card__cart" type="button"><svg viewBox="0 0 24 24"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6"/></svg></button>
+      </div>
+    </div>
+    <div class="product-card">
+      <span class="product-card__badge">58%</span>
+      <div class="product-card__wish"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg></div>
+      <div class="product-card__img-wrap"><img class="product-card__img" src="./images/product7.png" alt="Dark oven" /></div>
+      <p class="product-card__name">Bosch 300 Series SHEM63W55N</p>
+      <div class="product-card__price">
+        <span><span class="product-card__current">998$</span> <span class="product-card__old">1,200$</span></span>
+        <button class="product-card__cart" type="button"><svg viewBox="0 0 24 24"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6"/></svg></button>
+      </div>
+    </div>
+    <div class="product-card">
+      <span class="product-card__badge">40%</span>
+      <div class="product-card__wish"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg></div>
+      <div class="product-card__img-wrap"><img class="product-card__img" src="./images/product1.png" alt="Toaster oven blue" /></div>
+      <p class="product-card__name">Bosch 300 Series SHEM63W55N</p>
+      <div class="product-card__price">
+        <span><span class="product-card__current">998$</span> <span class="product-card__old">1,500$</span></span>
+        <button class="product-card__cart" type="button"><svg viewBox="0 0 24 24"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6"/></svg></button>
+      </div>
+    </div>
+    <div class="product-card">
+      <span class="product-card__badge">40%</span>
+      <div class="product-card__wish"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg></div>
+      <div class="product-card__img-wrap"><img class="product-card__img" src="./images/product8.png" alt="Small refrigerator" /></div>
+      <p class="product-card__name">Bosch 300 Series SHEM63W55N</p>
+      <div class="product-card__price">
+        <span><span class="product-card__current">998$</span> <span class="product-card__old">1,200$</span></span>
+        <button class="product-card__cart" type="button"><svg viewBox="0 0 24 24"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6"/></svg></button>
+      </div>
+    </div>
+    <div class="product-card">
+      <span class="product-card__badge">40%</span>
+      <div class="product-card__wish"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg></div>
+      <div class="product-card__img-wrap"><img class="product-card__img" src="./images/product6.png" alt="Compact oven" /></div>
+      <p class="product-card__name">Bosch 300 Series SHEM63W55N</p>
+      <div class="product-card__price">
+        <span><span class="product-card__current">998$</span> <span class="product-card__old">1,200$</span></span>
+        <button class="product-card__cart" type="button"><svg viewBox="0 0 24 24"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6"/></svg></button>
+      </div>
+    </div>
+    <div class="product-card">
+      <span class="product-card__badge">40%</span>
+      <div class="product-card__wish"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg></div>
+      <div class="product-card__img-wrap"><img class="product-card__img" src="./images/product9.png" alt="Cookware pot" /></div>
+      <p class="product-card__name">Bosch 300 Series SHEM63W55N</p>
+      <div class="product-card__price">
+        <span><span class="product-card__current">998$</span> <span class="product-card__old">1,200$</span></span>
+        <button class="product-card__cart" type="button"><svg viewBox="0 0 24 24"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6"/></svg></button>
+      </div>
+    </div>
+    <div class="product-card">
+      <span class="product-card__badge">45%</span>
+      <div class="product-card__wish"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg></div>
+      <div class="product-card__img-wrap"><img class="product-card__img" src="./images/product10.png" alt="Washing machine white" /></div>
+      <p class="product-card__name">Bosch 300 Series SHEM63W55N</p>
+      <div class="product-card__price">
+        <span><span class="product-card__current">998$</span> <span class="product-card__old">1,200$</span></span>
+        <button class="product-card__cart" type="button"><svg viewBox="0 0 24 24"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6"/></svg></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="padding: 0 40px 60px;" class="promo-section-container">
+  <div class="promo-banner">
+    <div class="promo-banner__imgs">
+      <img src="./images/productsbanner.png" alt="Cookware set" style="width:900px;border-radius:12px;" />
+    </div>
+    <div class="promo-banner__text">
+      <p class="promo-banner__brand">Mansoury.</p>
+      <h3 class="promo-banner__title">Steel 10-Piece<br>Cookware Set</h3>
+      <button class="promo-banner__btn" type="button">Show Products &rsaquo;</button>
+    </div>
+  </div>
+</section>
+
+<section class="features" id="features">
+  <div class="features__grid">
+    <div class="feature">
+      <div class="feature__icon">
+        <svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+      </div>
+      <div>
+        <p class="feature__title">Online Support</p>
+        <p class="feature__desc">Dedicated Support Team</p>
+      </div>
+    </div>
+    <div class="feature">
+      <div class="feature__icon">
+        <svg viewBox="0 0 24 24"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+      </div>
+      <div>
+        <p class="feature__title">Free Shipping</p>
+        <p class="feature__desc">Purchases Over $100</p>
+      </div>
+    </div>
+    <div class="feature">
+      <div class="feature__icon">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+      </div>
+      <div>
+        <p class="feature__title">Timeless Shopping</p>
+        <p class="feature__desc">24/7 Purchasing</p>
+      </div>
+    </div>
+    <div class="feature">
+      <div class="feature__icon">
+        <svg viewBox="0 0 24 24"><polyline points="1 4 1 10 7 10"/><path d="M3.51 15a9 9 0 102.13-9.36L1 10"/></svg>
+      </div>
+      <div>
+        <p class="feature__title">Product Returns</p>
+        <p class="feature__desc">No-Questions-Asked Returns</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer id="footer">
+  <div class="footer__grid">
+    <div class="footer__col">
+      <h4>Stay Connected</h4>
+      <div class="footer__address">
+        <p>Address: Istanbul, Turkey</p>
+        <p>Phone: <a href="tel:+905001234567">+90 985 98 75</a></p>
+      </div>
+      <p class="footer__social-label">Follow us on social media</p>
+      <div class="footer__socials">
+        <a href="#" aria-label="Twitter">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#1da1f2" stroke-width="1.8"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/></svg>
+        </a>
+        <a href="#" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" fill="#1877f2"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+        </a>
+        <a href="#" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="#0a66c2"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+        <a href="#" aria-label="TikTok">
+          <svg viewBox="0 0 24 24" fill="#000"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.78 1.52V6.76a4.85 4.85 0 01-1.01-.07z"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="footer__col">
+      <h4>Mansoury.</h4>
+      <ul>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Collaboration</a></li>
+        <li><a href="#">Dashboard</a></li>
+        <li><a href="#">Policies</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__col">
+      <h4>Customer Services</h4>
+      <ul>
+        <li><a href="#">Rules and Regulations</a></li>
+        <li><a href="#">Terms of Use</a></li>
+        <li><a href="#">Return Procedures</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Forums</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__col">
+      <h4>Quick Access</h4>
+      <ul>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Returns and Refunds</a></li>
+        <li><a href="#">Track Order</a></li>
+        <li><a href="#">FAQ</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer__bottom">
+    <a href="./index.html" class="footer__logo">Mansoury.</a>
+    <p class="footer__copy">&copy; All Rights Reserved for Mansoury &middot; 2026</p>
+  </div>
+</footer>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const openMenuBtn = document.querySelector('.js-open-menu');
+    const closeMenuBtn = document.querySelector('.js-close-menu');
+    const menuContainer = document.querySelector('.js-menu-container');
+
+    if (openMenuBtn && closeMenuBtn && menuContainer) {
+      openMenuBtn.addEventListener('click', () => {
+        menuContainer.classList.add('is-open');
+        openMenuBtn.setAttribute('aria-expanded', 'true');
+        document.body.classList.add('no-scroll');
+      });
+
+      closeMenuBtn.addEventListener('click', () => {
+        menuContainer.classList.remove('is-open');
+        openMenuBtn.setAttribute('aria-expanded', 'false');
+        document.body.classList.remove('no-scroll');
+      });
+    }
+  });
+</script>
+</body>
+</html>
